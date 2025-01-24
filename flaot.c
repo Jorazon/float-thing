@@ -23,7 +23,7 @@ float_llu parse(float value) {
     int expt = unified.expt - 127;
     int frac = unified.frac | 1<<23;
     
-    printf("%llu %lld %llu\n", sign, expt, frac);
+    printf("%llu %lld %llu\n", unified.sign, unified.expt, unified.frac);
     printf("%llu %lld %llu\n", sign, expt, frac);
 
     // denormalize numbers < 1
